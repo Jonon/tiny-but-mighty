@@ -40,18 +40,19 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_qybee"]
-radius = 8.0
+radius = 4.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("1_2opkl")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -16)
+position = Vector2(0, -8)
+scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_aux5v")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.168156
+frame_progress = 0.227591
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
+position = Vector2(0, -4)
 shape = SubResource("CircleShape2D_qybee")
