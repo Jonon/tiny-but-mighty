@@ -515,5 +515,9 @@ tile_set = SubResource("TileSet_nx8p2")
 [node name="Player" parent="." instance=ExtResource("1_b34hx")]
 position = Vector2(-35, 17)
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(35, -17)
 zoom = Vector2(4, 4)
+limit_left = -144
+limit_right = 144
+limit_bottom = 80
