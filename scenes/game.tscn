@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://dqrlbkkvpn5l"]
+[gd_scene load_steps=8 format=4 uid="uid://dqrlbkkvpn5l"]
 
 [ext_resource type="PackedScene" uid="uid://b1dtw404e7i88" path="res://scenes/player.tscn" id="1_b34hx"]
 [ext_resource type="Texture2D" uid="uid://dw8lyt4wive5u" path="res://assets/sprites/tiles/CastleTiles.png" id="2_i27nh"]
+[ext_resource type="PackedScene" uid="uid://ci20i43xvkne8" path="res://scenes/heart.tscn" id="3_g5na5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_aggvh"]
 texture = ExtResource("2_i27nh")
@@ -523,3 +524,6 @@ zoom = Vector2(3, 3)
 limit_left = -192
 limit_right = 192
 limit_bottom = 80
+
+[node name="Heart" parent="." instance=ExtResource("3_g5na5")]
+position = Vector2(-80, 61)
